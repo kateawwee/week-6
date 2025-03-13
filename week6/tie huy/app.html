@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Guessing Game</title>
+    <style>
+        /* Reset margin and padding for all elements */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body styling */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            padding: 40px;
+        }
+        /* Container for the game box */
+        
+        .game-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        /* Title styling */
+        
+        h1 {
+            font-size: 2.5em;
+            color: #2d6a4f;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            color: #d4a5a5;
+            margin-bottom: 30px;
+        }
+        /* Result text styling */
+        
+        #result {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+        /* Input box styling */
+        
+        input[type="number"] {
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            width: 150px;
+        }
+        /* Button styling */
+        
+        button {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #6abf69;
+        }
+        /* Focused input field styling */
+        
+        input[type="number"]:focus {
+            border-color: #2d6a4f;
+            outline: none;
+        }
+        /* Styling for the input box container */
+        
+        .input-container {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Tie Huy Game</h1>
+        <h2>Your guess is...</h2>
+        <p id="result"></p>
+
+        <div class="input-container">
+            <input type="number" id="userGuess" placeholder="Enter your guess" min="1" max="100" value="" />
+            <button onclick="checkGuess()">Submit Guess</button>
+        </div>
+    </div>
+
+    <script src="tie huy.js"></script>
+</body>
+
+</html>
